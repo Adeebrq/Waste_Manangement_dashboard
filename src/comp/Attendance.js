@@ -1,17 +1,50 @@
-import React from "react";
-import "./Attendance.css"
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import {DatePicker} from "antd";
+import TodayContent from "./AttendanceChild/TodayContent"
+import "./Styles/Attendance.css"
 
-const Attendance =()=>{
-    return(
-        <div className="AttendNavbar">
-            <ul>
-            <li><NavLink to="/Dashboard/Attendance/Today" className={({ isActive }) => (isActive ? 'active-link' : '')}>Today</NavLink></li>
-            <li><NavLink to="/Dashboard/Attendance/Week" className={({ isActive }) => (isActive ? 'active-link' : '')}>Week</NavLink></li>
-            <li><NavLink to="/Dashboard/Attendance/Month" className={({ isActive }) => (isActive ? 'active-link' : '')}>Month</NavLink></li>
-            </ul>
-        </div>
 
-    )
-}
+const Attendance = () => {
+  const [activeTab, setActiveTab] = useState('Today');
+
+  const renderContent = () => {
+    switch(activeTab) {
+      case 'Today':
+        return <TodayContent />;
+      case 'Week':
+        return <WeekContent />;
+      case 'Month':
+        return <MonthContent />;
+      default:
+        return <TodayContent />;
+    }
+  };
+
+  return (
+    <div>
+      <div className="Newcontainer">
+      <div className="subnavbar">
+        <button 
+          onClick={() => setActiveTab('Today')}
+          className={activeTab === 'Today' ? 'active' : ''}>Today</button>
+        <button 
+          onClick={() => setActiveTab('Week')}
+          className={activeTab === 'Week' ? 'active' : ''}>Week
+        </button>
+        <button 
+          onClick={() => setActiveTab('Month')}
+          className={activeTab === 'Month' ? 'active' : ''}>Month
+        </button>
+        <span id='date'><DatePicker /></span>
+      </div>
+      {renderContent()}
+    </div>
+    </div>
+  );
+};
+
+
+const WeekContent = () => <div>Week's Attendance Content</div>;
+const MonthContent = () => <div>Month's Attendance Content</div>;
+
 export default Attendance;

@@ -1,0 +1,44 @@
+.Sradialchartcontainer{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 110vh;
+    height: 39vh;
+}
+.Sradialtitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 20px;
+}
+.Sradialcharts {
+    display: flex;
+}
+.Sradiallegends{
+    display: flex;
+}
+.Sradiallegcontainer{
+    display: flex;
+}
+.Sradiallegend1 {
+    display: flex;
+    width: 15px;     
+    height: 15px;   
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #F4B63E;
+    margin-right: 120px;
+}
+.Sradiallegend2 {
+    display: flex;
+    width: 15px;     
+    height: 15px;   
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #1ED760;
+    margin-right: 120px;
+}
+#Sradiallegendname{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}

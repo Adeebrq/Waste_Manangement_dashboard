@@ -1,0 +1,71 @@
+.table-container {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 136vh;
+    margin-left: 20px;
+    overflow: hidden;
+
+}
+  
+.payment-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 136vh;
+}
+  
+.payment-table th {
+    background-color: #2c7a7b;
+    color: white;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+  
+.payment-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+.payment-table tr:nth-child(even) {
+    background-color: white;
+}
+.payment-table tr:nth-child(odd) {
+    background-color: #F0FCFD;
+}
+  
+.payment-table tr:last-child td {
+    border-bottom: none;
+}
+  
+.payment-table td:last-child {
+    text-align: right;
+}
+  
+.separator {
+    width: 1px;
+    background-color: white;
+    padding: 0 !important;
+}
+  
+.empty-row td {
+    height: 250px;
+    background-color: white;
+}
+  
+@media (max-width: 600px) {
+    .payment-table th,
+    .payment-table td {
+      padding: 10px;
+    }
+}
+
+.payment-table td:first-child,
+.payment-table th:first-child {
+    border-right: 2px solid #e2e8f0;
+}
+  

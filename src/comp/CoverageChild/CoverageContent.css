@@ -1,0 +1,62 @@
+.maincontainer {
+    background-color: white;
+}
+.Coveragecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+  
+.Coveragecard {
+    flex: 1;
+    max-width: calc(33.33% - 14px);
+    border-top: 5px solid #2c7a7b;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    max-width: 400px;
+    overflow: hidden;
+}
+  
+.card-header {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.card-body {
+    padding: 10px;
+}
+
+  .card-body p {
+    margin: 10px 0;
+    color: #2c7a7b;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.bottom-row {
+    display: flex;
+    justify-content: flex-start;
+    width: 370px;
+    height: 210px;
+}
+#info{
+    color: black;
+}
+@media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    .card, .bottom-row .card {
+        max-width: 100%;
+      }
+  }

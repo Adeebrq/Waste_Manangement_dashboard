@@ -1,0 +1,94 @@
+.SCollectioncontainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  padding: 20px;
+  flex-wrap: wrap;
+
+}
+
+.Schart-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px; 
+  min-width: 0;
+}
+
+.Sdonutcontainer {
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 880px;
+  display: flex;
+  margin-left: -18px;
+
+}
+.donuttitle{
+  padding:20px 20px;
+  margin-left: 15px;
+}
+
+.barcontainer{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.barcontainer h4{
+  padding: 20px;
+  width: 100%;
+}
+h4 {
+  margin-bottom: 10px; 
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+#S1{
+  margin-left: 50px;
+  margin-top: -60px;
+}
+#S2{
+  margin-right: 100px;
+  margin-bottom: -100px;
+  margin-top: 29px;
+  z-index: 1;
+}
+.segtodaybarchart1{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 420px;
+  background-color: white;
+  margin-left: -100px;
+  margin-top: -1px;
+  padding: 10px;
+}
+#segtitle2{
+  padding: 20px;
+}
+#STtitle{
+  width: 100%;
+}
+
+.Sradiallchart{
+  margin-top: 20px;
+  margin-left: -8px;
+}
+.STradialtitle{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 20px;
+  border: 2px solid black;
+}
+
+.SMbarcontainer{
+  margin-left: 0px;
+}

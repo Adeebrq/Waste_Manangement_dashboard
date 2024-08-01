@@ -1,0 +1,45 @@
+.colmonthcontainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-top: 37px;
+    flex-wrap: wrap;
+}
+.colmonthcontainer2{
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px; 
+    min-width: 0; 
+}
+
+.colmonleftchart {
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 368px;
+    width: 600px;
+}
+
+.colmonrightchart{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    height: 370px;
+}
+.colmonrightchart #title{
+    padding: 20px;
+    margin-left: 30px;
+}
+.colmonleftchart{
+
+}
+#leftittle{
+    padding: 10px;
+    margin-left: 20px;
+
+}

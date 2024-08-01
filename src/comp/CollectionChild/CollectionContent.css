@@ -1,0 +1,70 @@
+.Collectioncontainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.chart-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px; 
+    min-width: 0;
+    margin-left: -10px ;    
+}
+
+.donutcontainer {
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 368px;
+    width: 550px;
+}
+.donuttitle{
+    padding:20px 20px;
+    margin-left: 15px;
+}
+
+.barcontainer{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.barcontainer h4{
+    padding: 20px;
+    width: 100%;
+}
+h4 {
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+.Collectionlefttitle{
+    display: flex;
+}
+.Collectionicons{
+    display: flex;
+}
+.Collectionicons button{
+    border: none;
+    background-color: white;
+    font-size: 32px;
+    color: #666666;
+    padding: 10px;
+}
+.Collectionicons button:hover{
+    color: #086972 ;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.Collectionicons #but1.active,.Collectionicons #but2.active {
+    background-color: #086972;
+    color: white;
+}

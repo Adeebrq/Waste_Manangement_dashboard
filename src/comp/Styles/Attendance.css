@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.subnavbar{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.subnavbar button{
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.subnavbar #date{
+    margin-top: -30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.subnavbar button.active{
+    border-bottom: 4px solid #086972;
+}
+.subnavbar #butt{
+    
+}
