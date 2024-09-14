@@ -41,12 +41,12 @@ const Login = () => {
           <form onSubmit={handleLogin}>
           <div className="input-container">
             <i className='icon email-icon'><MdEmail /></i>
-            <input type="text" placeholder="Enter your mail ID" onChange={(e)=> setEmail(e.target.value)} value={email} />
+            <input type="text" placeholder="Enter your mail ID (Enter 'user')" onChange={(e)=> setEmail(e.target.value)} value={email} />
           </div>
 
           <div className="input-container">
             <i className='icon password-icon'><RiLockPasswordFill /></i>
-            <input type="password" placeholder="Enter your Password"  onChange={(e)=> setPassword(e.target.value)} value={password}/>
+            <input type="password" placeholder="Enter your Password (Enter '123')"  onChange={(e)=> setPassword(e.target.value)} value={password}/>
             <i className='icon hide-icon'><BiSolidHide /></i>
           </div>
           {error && <p className="error-message">{error}</p>}
