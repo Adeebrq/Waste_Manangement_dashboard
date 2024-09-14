@@ -51,7 +51,7 @@ const Login = () => {
           </div>
           {error && <p className="error-message">{error}</p>}
 
-          <Link to="resetPassword" className="forgot-password">Forgot Password ?</Link>
+          {/* <Link to="resetPassword" className="forgot-password">Forgot Password ?</Link> */}
           <button type="submit" className="login-button">Login</button>
 
           <div className="footer">
