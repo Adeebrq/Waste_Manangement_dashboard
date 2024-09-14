@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import "./Login.css";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { BiSolidHide } from "react-icons/bi";
+import { BiSolidHide, BiSolidShow } from "react-icons/bi";
 import { Link, useNavigate } from 'react-router-dom';
 import backgroundImage from './/image/backgroundtwo.png'; 
 
@@ -11,6 +11,7 @@ const Login = () => {
   const [email, setEmail]= useState("");
   const [password, setPassword]=useState("");
   const [error, setError]= useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const Navigate= useNavigate();
 
 
@@ -30,6 +31,10 @@ const Login = () => {
     }
   };
 
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
     <div className='container1'>
     <div className='login-container'>
@@ -45,10 +50,20 @@ const Login = () => {
           </div>
 
           <div className="input-container">
-            <i className='icon password-icon'><RiLockPasswordFill /></i>
-            <input type="password" placeholder="Enter your Password (Enter '123')"  onChange={(e)=> setPassword(e.target.value)} value={password}/>
-            <i className='icon hide-icon'><BiSolidHide /></i>
-          </div>
+          <i className='icon password-icon'><RiLockPasswordFill /></i>
+          <input 
+            type={passwordVisible ? "text" : "password"} 
+            placeholder="Enter your Password (Enter '123')"  
+            onChange={(e) => setPassword(e.target.value)} 
+            value={password}
+          />
+          <i 
+            className='icon hide-icon' 
+            onClick={togglePasswordVisibility}
+          >
+            {passwordVisible ? <BiSolidHide /> : <BiSolidShow />} 
+          </i>
+        </div>
           {error && <p className="error-message">{error}</p>}
 
           {/* <Link to="resetPassword" className="forgot-password">Forgot Password ?</Link> */}
