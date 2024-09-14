@@ -106,15 +106,15 @@ const CollectionContent = () => {
 
   const [activeTab2, setActiveTab2] = useState('Bar');
 
-  const StyledChart = styled.div`
-  .apexcharts-pie-series path {
-    transition: all 0.01s ease;
-  }
-  .apexcharts-pie-series:hover path {
-    transform: scale(1.03);
-    transform-origin: center;
-  }
-`;
+//   const StyledChart = styled.div`
+//   .apexcharts-pie-series path {
+//     transition: all 0.01s ease;
+//   }
+//   .apexcharts-pie-series:hover path {
+//     transform: scale(1.03);
+//     transform-origin: center;
+//   }
+// `;
 
 const DonutCharts1 = () => {
   const chartOptions = {

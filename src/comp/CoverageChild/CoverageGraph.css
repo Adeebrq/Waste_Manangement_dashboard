@@ -12,11 +12,6 @@
   padding: 20px;
   height: 400px;
 }
-.plotOptions: {
-  bar: {
-    columnWidth: '50%'
-  }
-}
 
 @media (max-width: 768px) {
   .chart-container {
