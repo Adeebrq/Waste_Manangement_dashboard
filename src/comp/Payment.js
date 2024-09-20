@@ -44,7 +44,7 @@ const Attendance = () => {
 };
 
 
-const WeekContent = () => <div>Week's Payment Content</div>;
-const MonthContent = () => <div>Month's Payment Content</div>;
+const WeekContent = () => <div>Intentionally Empty</div>;
+const MonthContent = () => <div>Intentionally Empty</div>;
 
 export default Attendance;

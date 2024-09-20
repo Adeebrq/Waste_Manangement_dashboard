@@ -53,7 +53,7 @@ const Attendance = () => {
   );
 };
 
-const WeekContent = () => <div>Week's Vehicle rent Content</div>;
-const MonthContent = () => <div>Month's Vehicle rent Content</div>;
+const WeekContent = () => <div>Intentionally Empty</div>;
+
 
 export default Attendance;

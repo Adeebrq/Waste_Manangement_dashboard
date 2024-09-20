@@ -46,6 +46,6 @@ const Collection = () => {
 };
 
 
-const WeekContent = () => <div>Week's Collection Content</div>;
+const WeekContent = () => <div>Intentionally Empty</div>;
 
 export default Collection;

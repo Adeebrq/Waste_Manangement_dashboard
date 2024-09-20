@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Login.css";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { BiSolidHide, BiSolidShow } from "react-icons/bi";
+import { BiSolidHide } from "react-icons/bi";
 import { Link, useNavigate } from 'react-router-dom';
 import backgroundImage from './image/backgroundtwo.png';
 
@@ -15,10 +15,6 @@ const Login = () => {
     event.preventDefault(); // to avoid automatic reloading
     // Navigate to Home directly without any checks
     Navigate('/Home');
-  };
-
-  const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
   };
 
   return (
