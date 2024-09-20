@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {DatePicker} from "antd";
 import CoverageContent from "./CoverageChild/CoverageContent"
-import "./CoverageChild/CoverageBar.css"
+import "./CoverageChild/Coveragenavbar.css"
 import CoverageGraph from './CoverageChild/CoverageGraph';
 
 import { MdOutlineSpaceDashboard } from "react-icons/md";
@@ -30,8 +30,8 @@ const Attendance = () => {
   return (
     <div>
       <div className="Newcontainer">
-      <div className="subnavbar">
-
+      <div className="Csubnavbar">
+        <div className='Csubnavbar2'>
         <button id='time'
           onClick={() => setActiveTab('Today')}
           className={activeTab === 'Today' ? 'active' : ''}>Today
@@ -46,18 +46,18 @@ const Attendance = () => {
           onClick={() => setActiveTab('Month')}
           className={activeTab === 'Month' ? 'active' : ''}>Month
         </button>
-
+        </div>
+        <div className='rightSubNavbar'>
         <button id='butt1'
           onClick={() => setActiveTab('Today')}
           className={activeTab === 'Today' ? 'active' : ''}><MdOutlineSpaceDashboard/>
         </button>
-
         <button id='butt2'
           onClick={() => setActiveTab('Today1')}
           className={activeTab === 'Today1' ? 'active' : ''}><HiOutlineChartBar/>
         </button>
-
         <span id='date'><DatePicker /></span>
+        </div>
       </div>
       {renderContent()}
     </div>
@@ -66,7 +66,7 @@ const Attendance = () => {
 };
 
 const CoverageData=()=> <CoverageGraph/>;
-const WeekContent = () => <div>Week's Coverage Content</div>;
-const MonthContent = () => <div>Month's Coverage Content</div>;
+const WeekContent = () => <div>Intentionally Empty</div>;
+const MonthContent = () => <div>Intentionally Empty</div>;
 
 export default Attendance;

@@ -4,6 +4,7 @@
     justify-content: space-between; 
     margin-top: 37px;
     flex-wrap: wrap;
+
 }
 .colmonthcontainer2{
     flex: 1; 
@@ -12,6 +13,7 @@
     align-items: center;
     margin: 0 10px; 
     min-width: 0; 
+
 }
 
 .colmonleftchart {
@@ -38,5 +40,39 @@
 #leftittle{
     padding: 10px;
     margin-left: 20px;
+}
 
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .chart-container  {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+}
+/* xl */
+@media (max-width: 1280px) {
+    .colmonthcontainer .colmonthcontainer2{
+    display: flex;
+    flex-direction: column !important;
+    }
+    .colmonrightchart{
+        margin-top: 2.5em;
+        margin-left: -7.4em;
+    }
+}
+/* lg */
+@media (max-width: 1024px) {
+    .chart-container{
+        display: flex;
+        flex-direction: column; 
+    }
+
+}
+@media (max-width: 768px) {
+    .chart-container{
+        display: flex;
+        flex-direction: column; 
+    }
 }

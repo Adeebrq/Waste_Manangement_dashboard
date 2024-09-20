@@ -40,7 +40,7 @@ const Today=()=>{
                     <div className="bottombox">
                     <div className="databox">
                         <div className="leftbox">
-                            <i id="icon"><Icon1 /></i>
+                            <i id="icons"><Icon1/></i>
                                 <p id="text">HCV</p>                       
                         </div>
                         <div className="rightbox">
@@ -70,7 +70,7 @@ const Today=()=>{
                     <div className="databox">
                         <div className="leftbox">
                             <i id="icon"><Icon2 /></i>
-                                <p id="text">Supervisor</p>                       
+                                <p id="text3">Supervisor</p>                       
                         </div>
                         <div className="rightbox">
                             <p id="text">114/128</p>

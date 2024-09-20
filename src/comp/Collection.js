@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {DatePicker} from "antd";
 import CollectionContent from './CollectionChild/CollectionContent';
-import "./Styles/Attendance.css"
+import "./CollectionChild/ColNavbar.css"
 import CollectionMonth from './CollectionChild/CollectionMonth';
 import DonutCharts from './CollectionChild/CollectionnTest';
 

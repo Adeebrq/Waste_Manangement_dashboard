@@ -1,9 +1,12 @@
-
 .todaycontent {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 100%;
-
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .contentbox {
@@ -11,43 +14,53 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width:500px;
+    width: 35vw;
     height: 45vh;
+    min-height: 20vh;
     margin: 0 auto;
 }
-.todaycontent .contentbox .box .data{
 
+.todaycontent .contentbox .box .data {
     display: flex;
     justify-content: center;
 }
-.todaycontent .contentbox .box .data .bottombox{
-    margin-left: 10px;
 
+.todaycontent .contentbox .box .data .bottombox {
+    margin-left: -50px;
 }
+
 .todaycontent .contentbox .box .boxtitle {
     color: #007a7a;
     padding: 15px 20px;
-    border-bottom: 2px solid#007a7a;
+    border-bottom: 2px solid #007a7a;
     justify-content: center;
     width: 100%;
     flex-direction: column;
 }
+
 .boxtitle h5 {
     margin: 0;
     font-size: 1.2em;
 }
-.todaycontent .contentbox .box .databox{
+
+.box{
+    box-sizing: border-box;
+}
+
+.todaycontent .contentbox .box .databox {
     display: flex;
     padding: 10px 10px;
     flex-direction: row;
+    width: 100%;
+    height: auto;
 }
 
-.todaycontent .contentbox .box .databox .leftbox{
+.todaycontent .contentbox .box .databox .leftbox {
     border: 2px solid #DDE0E4;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    height: 100px;
-    width: 100px;
+    height: 12vh;
+    width: 7vw;
     background: #007a7a;
     display: flex;
     flex-direction: column;
@@ -55,13 +68,16 @@
     align-items: center;
     border-right: 5px;
 }
-.todaycontent .contentbox .box .databox .leftbox #icon{
-    font-size: 50px;
+
+.todaycontent .contentbox .box .databox .leftbox #icon {
+    font-size: 2.5em;
     color: white;
 }
-.todaycontent .contentbox .box .databox .leftbox #text{
+
+.todaycontent .contentbox .box .databox .leftbox #text {
     color: white;
 }
+
 .todaycontent .contentbox .box .databox .rightbox {
     display: flex;
     justify-content: center;
@@ -70,39 +86,173 @@
     border: 2px solid #DDE0E4;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    height: 100px;
-    width: 100px;
-
-}
-.todaycontent .contentbox .box .bottombox{
-    margin-left: 24px;
+    height: 12vh;
+    width: 7vw;
 }
 
-.todaycontent .contentbox .box .databox .leftbox img{
-    width: 40px;
-    height: 50px;
+.todaycontent .contentbox .box .databox .leftbox img {
+    width: 1.2em;  
+    height: auto; 
 }
-.todaycontent .contentbox .box .databox .leftbox #text2{
+
+.todaycontent .contentbox .box .databox .leftbox #text2 {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 1.1em;
+    font-size: 1em;
+    position: relative;
 }
 
+.todaycontent .contentbox .box .databox .leftbox #text3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5em;
+    font-size: 1em;
+    position: relative;
+}
+#icon img #icon {
+    width: 5em;  
+    height: auto; 
+}
+.rightbox p{
+    font-size: 1em;
+}
+
+.leftbox #text2 {
+    margin-left: 1.2em;
+
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .todaycontent {
+        max-width: 1280px;
+        margin-left: -30px;
+    }
+    .contentbox{
+        max-height: 458px;
+        margin: 15px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .todaycontent {
+        max-width: 1024px;
+    }
+    .contentbox{
+        max-height: 358px;
+        margin: 15px;
+    }
+    #icon{
+        font-size: 20px;
+    }
+    .rightbox p{
+        font-size: .8em;
+    }
+    .leftbox #icons i{
+        width: 2px;
+        height: 2px; 
+        padding: 10px;
+    }
+    .todaycontent .contentbox .box .bottombox {
+        margin-left: 0px;
+    }
+    .leftbox #text2 p{
+        font-size: .8em;
+    }
 
 
 
+}
 
+/* lg */
+@media (max-width: 1024px) {
+    .todaycontent {
+        min-width: 468px;
+        min-height: 568px;
+        margin-left: -20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contentbox{
+        max-height: 358px;
+        margin: 15px;
 
+        margin-left: 5em;
+        width: 25em;
+    }
+    #icon{
+        font-size: 20px;
+    }
+    .rightbox p{
+        font-size: .8em;
+    }
+    .leftbox #icons i{
+        width: 2px;
+        height: 2px; 
+        padding: 10px;
+    }
+    .todaycontent .contentbox .box .bottombox {
+        margin-left: 16px;
+    }
+    .leftbox #text2 p{
+        font-size: .5em;
+    }
+    .todaycontent .contentbox .box .databox .rightbox {
+        height:8vh;
+        width: 6vh;
+    }
+    .todaycontent .contentbox .box .databox .leftbox {
+        height:8vh;
+        width: 6vh;
+    }
+    .todaycontent .contentbox .box .data .bottombox {
+        margin-left: -50px;
+    }
+    .todaycontent .contentbox .box .databox .leftbox #text2 {
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+    .todaycontent .contentbox .box .databox .leftbox #text3 {
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+    .todaycontent {
+        max-width: 1280px;
+        margin-left: -30px;
+    }
+    .todaycontent .contentbox .box .bottombox {
+        margin-left: 0px;
+    }
+}
 
+/* md */
+@media (max-width: 768px) {
 
+    .todaycontent {
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contentbox{
+        min-height: 468px;
+    }
+    #icon{
+        font-size: 20px;
+    }
+    .rightbox p{
+        font-size: .8em;
+    }
+    .leftbox #icons{
+        padding: 20px;
 
-
-
-
-
-
-
-
-
+    }
+    .todaycontent .contentbox .box .bottombox {
+        margin-left: 7px;
+    }
+}

@@ -112,7 +112,11 @@
     color: #888;
     margin-top: 1rem;
 }
-  
+
+.side-container{
+    width: 100%;
+    position: relative;
+}
 .side-container img {
     position: absolute;
     top: 0;

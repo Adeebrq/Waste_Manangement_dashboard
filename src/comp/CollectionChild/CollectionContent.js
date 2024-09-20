@@ -183,7 +183,7 @@ const DonutCharts1 = () => {
                 </button>
             </div>
             </div>
-            <div style={{ height: '300px', width: '600px', position: 'relative' }}>
+            <div style={{ height: '300px', width: '550px', position: 'relative' }}>
         {activeTab2 === 'Bar' ? (
           <Bar data={barData} options={barOptions} />
         ) : ( <DonutCharts/>

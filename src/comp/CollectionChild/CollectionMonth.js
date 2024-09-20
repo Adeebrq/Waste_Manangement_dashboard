@@ -134,7 +134,7 @@ const CollectionMonth = ()=>{
         </div>
         <div className='colmonrightchart'>
             <h4 id='title'>Waste Category wise Collection (MT)</h4>
-            <div style={{ height: '300px', width: '530px', position: 'relative' }}>
+            <div style={{ height: '300px', width: '470px', position: 'relative' }}>
               <Bar2 data={barData} options={barOptions} />
             </div>
           </div>

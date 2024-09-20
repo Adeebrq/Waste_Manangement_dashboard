@@ -36,7 +36,7 @@ const SegragationTest = () => {
             strokeWidth: '40%', 
             borderRadius: '8px', 
             colors: ['#F4B63E', '#1ED760'], 
-            distributed: true, // 
+            distributed: true, 
           },
         },
       },

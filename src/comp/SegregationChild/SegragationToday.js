@@ -114,16 +114,17 @@ const SegragationToday = () => {
 
       <p id='S2'>Segragation Status</p>
     </div>
+    </div>
+
     <div className='SMbarcontainer'>
       <div className="segtodaybarchart1">
           <div className="segMtitle">
             <h4 id='segtitle2'>Primary collection Vs D2D Segregation</h4>
         </div>
-        <div style={{ width: "400px", height: '400px',  position: 'relative' }}>
-      <div style={{ width: "400px"}}><Bar2 data={barChartData1} options={chartOptions1} /></div>
+        <div style={{ width: "380px", height: '450px',  position: 'relative' }}>
+      <div style={{ width: "380px", height: '450px'}}><Bar2 data={barChartData1} options={chartOptions1} /></div>
       </div>
       </div>
-    </div>
     </div>
   </div>
   <div className='Sradiallchart'>

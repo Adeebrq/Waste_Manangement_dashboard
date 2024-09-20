@@ -1,6 +1,6 @@
 import React from 'react';
-import Chart from 'react-apexcharts'; // Assuming you're using react-apexcharts
-import styled from 'styled-components'; // You'll need to install styled-components
+import Chart from 'react-apexcharts'; 
+import styled from 'styled-components';
 
 const StyledChart = styled.div`
   .apexcharts-pie-series path {

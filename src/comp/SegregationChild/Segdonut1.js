@@ -1,6 +1,6 @@
 import React from 'react';
-import Chart from 'react-apexcharts'; // Assuming you're using react-apexcharts
-import styled from 'styled-components'; // You'll need to install styled-components
+import Chart from 'react-apexcharts'; 
+import styled from 'styled-components';
 
 const StyledChart = styled.div`
   .apexcharts-pie-series path {
@@ -42,7 +42,7 @@ const Segdonut1 = () => {
     },
     chart: {
       id: 'donut-chart',
-      offsetX: -70,
+      offsetX: -50,
       offsetY: -40,
     },
     grid: {
@@ -59,8 +59,8 @@ const Segdonut1 = () => {
     <StyledChart>
       <Chart
         type="donut"
-        width={500}
-        height={250}
+        width={470}
+        height={240}
         series={[93,7]}
         options={chartOptions}
       />

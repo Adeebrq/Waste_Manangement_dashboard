@@ -21,41 +21,44 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/resource-allocation" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><MdPeople /></i>Resource Allocation
           </NavLink>
         </li>
         <li>
-          <NavLink to="/march-out" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><MdPeople /></i> March Out
           </NavLink>
         </li>
         <li>
-          <NavLink to="/add-data" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><BsDatabaseFillAdd /></i> Add Data
           </NavLink>
         </li>
         <li>
-          <NavLink to="/reports" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><TbReport /></i> Reports
           </NavLink>
         </li>
         <li>
-          <NavLink to="/review" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><TiDocument /></i> Review
           </NavLink>
         </li>
         <li>
-          <NavLink to="/ward-management" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><FaLocationDot /></i> Ward Management
           </NavLink>
         </li>
         <li>
-          <NavLink to="/hierarchy" activeClassName="active-link">
+          <NavLink to="/Home" activeClassName="active-link">
           <i><LiaSitemapSolid /></i> Hierarchy
           </NavLink>
         </li>
       </ul>
+      <p style={{
+        fontWeight: "600"
+      }}>*sidebar is disabled on purpose*</p>
     </div>
   );
 };
